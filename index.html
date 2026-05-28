@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornal CEd 15 — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-brand">
+        <img src="images/logo.jpeg" alt="Logo Grêmio CED 15" class="header-logo" />
+        <div class="header-title">
+          <span class="main-name">JORNAL CED 15</span>
+          <span class="sub-name">O jornal do nosso colégio</span>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="date" id="current-date">Carregando...</div>
+        <div>Ceilândia - DF</div>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/noticias.html">Notícias</a>
+      <a href="pages/quadro.html">Quadro de Avisos</a>
+      <a href="pages/eventos.html">Eventos</a>
+      <a href="pages/gremio.html">Grêmio</a>
+      <a href="pages/sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="page-wrapper">
+
+      <!-- DESTAQUES -->
+      <section class="hero-section" aria-label="Notícias em destaque">
+        <div class="section-label">Destaques</div>
+
+        <div class="hero-grid">
+
+          <!-- NOTÍCIA PRINCIPAL -->
+          <article class="hero-main" onclick="window.location='pages/noticia-janjao.html'" style="cursor:pointer;">
+            <img src="images/foto2.jpeg" alt="Foto da notícia principal" />
+            <div class="card-overlay">
+              <span class="card-category">Destaque</span>
+              <h2 class="card-title"><a href="pages/noticia-janjao.html" style="color:inherit;text-decoration:none;">Janjão escreve polêmicas no X (antigo Twitter)</a></h2>
+              <p class="card-excerpt">Janjão demonstra seu apoio à continuidade da escala 6x1 e internautas se revoltam.</p>
+              <div class="card-meta">Redação Jornal CEd 15 &nbsp;·&nbsp; <span id="main-date">28 de maio de 2026</span></div>
+            </div>
+          </article>
+
+          <!-- LATERAL -->
+          <aside class="hero-side">
+
+            <article class="side-card" onclick="window.location='pages/noticia-kessily.html'" style="cursor:pointer;">
+              <img src="images/kessily.jpeg" alt="Foto notícia 2" />
+              <div class="side-card-body">
+                <span class="card-category">Escola</span>
+                <h3 class="card-title"><a href="pages/noticia-kessily.html" style="color:inherit;text-decoration:none;">Kessily é a melhor madrinha da escola. Entenda.</a></h3>
+                <div class="card-meta">Redação · 28/05/2026</div>
+              </div>
+            </article>
+
+            <article class="side-card">
+              <img src="images/logo.jpeg" alt="Foto notícia 3" />
+              <div class="side-card-body">
+                <span class="card-category">Grêmio</span>
+                <h3 class="card-title">Votações do Grêmio se aproximam.</h3>
+                <div class="card-meta">Redação · 28/05/2026</div>
+              </div>
+            </article>
+
+            <article class="side-card">
+              <img src="images/madame-curie.webp" alt="Foto notícia 4" />
+              <div class="side-card-body">
+                <span class="card-category">Eventos</span>
+                <h3 class="card-title">Feira de Ciências está chegando. Confira o edital!</h3>
+                <div class="card-meta">Redação · 28/05/2026</div>
+              </div>
+            </article>
+
+          </aside>
+        </div>
+      </section>
+
+      <!-- DIVISOR -->
+      <hr class="section-divider" />
+
+      <!-- GRADE DE NOTÍCIAS -->
+      <section class="news-section" aria-label="Mais notícias">
+        <div class="section-label">Mais Notícias</div>
+
+        <div class="news-grid">
+
+          <article class="news-card">
+            <img src="images/kessily.jpeg" alt="Foto notícia" />
+            <div class="news-card-body">
+              <span class="card-category">Escola</span>
+              <h3 class="card-title">Kessily é a melhor madrinha da escola. Entenda.</h3>
+              <p class="card-excerpt">A professora de inglês, Kessily, foi convidada a ser a madrinha do 3° B e alunos demonstram contentação com a mesma.</p>
+              <div class="card-meta">
+                <span>28/05/2026</span>
+                <a href="#" class="read-more">Ler mais →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="images/madame-curie.webp" alt="Foto notícia" />
+            <div class="news-card-body">
+              <span class="card-category">Cultura</span>
+              <h3 class="card-title">Mulheres na Ciência.</h3>
+              <p class="card-excerpt">Mulheres na Ciência é o tema da FECIMAT de 2026. Veja o que as turmas estão preparando.</p>
+              <div class="card-meta">
+                <span>28/05/2026</span>
+                <a href="#" class="read-more">Ler mais →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="images/logo.jpeg" alt="Foto notícia" />
+            <div class="news-card-body">
+              <span class="card-category">Grêmio</span>
+              <h3 class="card-title">Votações do Grêmio se aproximam.</h3>
+              <p class="card-excerpt">Votações do Grêmio se aproximam e somente duas chapas estão concorrendo. Veja as propostas.</p>
+              <div class="card-meta">
+                <span>28/05/2026</span>
+                <a href="#" class="read-more">Ler mais →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- QUADRO DE NOTICIAS (preview) -->
+    <section class="board-section" aria-label="Quadro de avisos">
+      <div class="page-wrapper">
+        <div class="board-header">
+          <div>
+            <div class="board-title">QUADRO DE AVISOS</div>
+            <div class="board-subtitle">Informações e comunicados importantes da escola</div>
+          </div>
+          <a href="pages/quadro.html" style="font-size:0.8rem;color:var(--orange);letter-spacing:0.08em;font-family:var(--font-body);font-weight:600;">
+            Ver todos →
+          </a>
+        </div>
+
+        <div class="board-grid">
+
+          <div class="board-item">
+            <div class="board-item-number">01</div>
+            <h3 class="board-item-title">ENEM 2026 se aproxima.</h3>
+            <p class="board-item-body">ENEM 2026 acontece em novembro, confirme sua inscrição sendo aluno do 3° Ensino Médio</p>
+            <div class="board-item-meta">28/05/2026 · Direção</div>
+          </div>
+
+          <div class="board-item">
+            <div class="board-item-number">02</div>
+            <h3 class="board-item-title">Vai fazer o PAS?</h3>
+            <p class="board-item-body">Quer sua entrada em uma faculdade garantida? Estude para o PAS e tenha sua chance de entrar na UnB.</p>
+            <div class="board-item-meta">28/05/2026 · Grêmio</div>
+          </div>
+
+          <div class="board-item">
+            <div class="board-item-number">03</div>
+            <h3 class="board-item-title">Autorização para o passeio da CCBB</h3>
+            <p class="board-item-body">Autorização para os pais assinarem para a saida de campo para o CCBB está disponivel na coordenação.</p>
+            <div class="board-item-meta">28/05/2026 · Coordenação</div>
+          </div>
+
+          <div class="board-item">
+            <div class="board-item-number">04</div>
+            <h3 class="board-item-title">Feriado na Quinta-Feira!</h3>
+            <p class="board-item-body">Na próxima quinta-feira não haverá aula.</p>
+            <div class="board-item-meta">28/05/2026 · Secretaria</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/logo.jpeg" alt="Logo" />
+          <span class="footer-brand-name">JORNAL CED 15</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="pages/noticias.html">Notícias</a>
+          <a href="pages/quadro.html">Quadro de Avisos</a>
+          <a href="pages/eventos.html">Eventos</a>
+          <a href="pages/gremio.html">Grêmio</a>
+          <a href="pages/sobre.html">Sobre</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Jornal CEd 15 — Feito pelo Grêmio Estudantil · Ceilândia - DF · Joao Rikelme, Maria Luisa, Maria Eduarda, Meiriele e Brenda
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

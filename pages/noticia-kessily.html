@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kessily é a melhor madrinha da escola — Jornal CEd 15</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .article-wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 32px;
+      transition: gap 0.2s;
+    }
+    .article-back:hover { gap: 10px; }
+
+    .article-category {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--orange);
+      background: rgba(247,148,29,0.1);
+      border: 1px solid rgba(247,148,29,0.3);
+      padding: 4px 12px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .article-title {
+      font-family: var(--font-serif);
+      font-size: 2.6rem;
+      font-weight: 900;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .article-subtitle {
+      font-size: 1.1rem;
+      color: var(--ink-mid);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      border-left: 3px solid var(--orange);
+      padding-left: 16px;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      font-family: var(--font-body);
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    .article-meta strong { color: var(--ink); }
+
+    .article-hero-img {
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .article-img-caption {
+      font-size: 0.75rem;
+      color: var(--ink-light);
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .article-body {
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: var(--ink-mid);
+    }
+
+    .article-body p { margin-bottom: 24px; }
+
+    .article-body h2 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .article-body blockquote {
+      background: var(--navy);
+      border-left: 4px solid var(--orange);
+      margin: 32px 0;
+      padding: 24px 28px;
+      color: rgba(255,255,255,0.85);
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    .article-body blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--orange);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .article-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .article-tag {
+      font-size: 0.72rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--orange-pale);
+      color: var(--ink-mid);
+      border: 1px solid var(--border-dark);
+      padding: 4px 12px;
+    }
+
+    @media (max-width: 640px) {
+      .article-title { font-size: 1.8rem; }
+      .article-wrapper { padding: 32px 16px 56px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-brand">
+        <img src="../images/logo.jpeg" alt="Logo Grêmio CED 15" class="header-logo" />
+        <div class="header-title">
+          <span class="main-name">JORNAL CED 15</span>
+          <span class="sub-name">O jornal do nosso colégio</span>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="date" id="current-date">Carregando...</div>
+        <div>Ceilândia — DF</div>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="../index.html">Home</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="quadro.html">Quadro de Avisos</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="gremio.html">Grêmio</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="article-wrapper">
+
+      <a href="../index.html" class="article-back">← Voltar para Home</a>
+
+      <span class="article-category">Escola</span>
+
+      <h1 class="article-title">Kessily é a melhor madrinha da escola. Entenda.</h1>
+
+      <p class="article-subtitle">
+        A professora de inglês, Kessily, foi convidada a ser a madrinha do 3° B e alunos demonstram contentamento com a escolha.
+      </p>
+
+      <div class="article-meta">
+        <span>Por <strong>Redação Jornal CEd 15</strong></span>
+        <span>·</span>
+        <span id="article-date">28 de maio de 2026</span>
+        <span>·</span>
+        <span>Categoria: <strong>Escola</strong></span>
+      </div>
+
+      <img
+        src="../images/kessily.jpeg"
+        alt="Foto da professora Kessily"
+        class="article-hero-img"
+      />
+      <p class="article-img-caption">Kessily Eugênia - 22/09/2025</p>
+
+      <div class="article-body">
+
+        <p>
+          Kessily Eugênia é professora de inglês e PCA de Tupi or not Tupi para os 2° e 3° anos do CEd 15 de Ceilândia.
+        </p>
+
+        <p>
+          Em entrevista, o 3° B decidiu convidar Kessily como madrinha porquê sentiram uma conexão forte com ela.
+        </p>
+
+        <h2>Por que a Kessily?</h2>
+
+        <p>
+          Kessily sempre foi gentil com seus alunos, então o 3° B decidiu em conjunto convidar a Kessily para ser sua madrinha, visto que ela é uma ótima professora e tem um bom histórico com seus alunos.
+        </p>
+
+        <blockquote>
+          "A nossa madrinha é uma ótima pessoa. Ela é atenciosa e da pra ver a sua vontade de ensinar. Além de ser uma ótima parceira de fofoca."
+          <cite>— Joao Rikelme, Aluno do 3° B</cite>
+        </blockquote>
+
+        <h2>A reação da turma</h2>
+
+        <p>
+          Os alunos disseram que fizeram um lanche para ela e compraram uma cesta para o convite. Existem boatos que ate hoje ela tem confete vermelho nela.
+        </p>
+
+        <p>
+          Vemos assim como é importante uma conexão dos professores com os alunos. Fazendo os alunos abrirem seus corações e sentimentos aos professores que todos os dias ensinam eles com muita dedicação e esforço.
+        </p>
+
+      </div>
+
+      <div class="article-tags">
+        <span class="article-tag">Kessily</span>
+        <span class="article-tag">3° B</span>
+        <span class="article-tag">Professores</span>
+        <span class="article-tag">Escola</span>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="../images/logo.jpeg" alt="Logo" />
+          <span class="footer-brand-name">JORNAL CED 15</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="../index.html">Home</a>
+          <a href="noticias.html">Notícias</a>
+          <a href="quadro.html">Quadro de Avisos</a>
+          <a href="eventos.html">Eventos</a>
+          <a href="gremio.html">Grêmio</a>
+          <a href="sobre.html">Sobre</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Jornal CEd 15 — Feito pelo Grêmio Estudantil · Ceilândia - DF · Joao Rikelme, Maria Luisa, Maria Eduarda, Meiriele e Brenda
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

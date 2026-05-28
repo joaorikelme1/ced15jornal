@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janjão escreve polêmicas no X — Jornal CEd 15</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* ── Artigo completo ── */
+    .article-wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 32px;
+      transition: gap 0.2s;
+    }
+    .article-back:hover { gap: 10px; }
+
+    .article-category {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--orange);
+      background: rgba(247,148,29,0.1);
+      border: 1px solid rgba(247,148,29,0.3);
+      padding: 4px 12px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .article-title {
+      font-family: var(--font-serif);
+      font-size: 2.6rem;
+      font-weight: 900;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .article-subtitle {
+      font-size: 1.1rem;
+      color: var(--ink-mid);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      border-left: 3px solid var(--orange);
+      padding-left: 16px;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      font-family: var(--font-body);
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    .article-meta strong {
+      color: var(--ink);
+    }
+
+    .article-hero-img {
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .article-img-caption {
+      font-size: 0.75rem;
+      color: var(--ink-light);
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .article-body {
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: var(--ink-mid);
+    }
+
+    .article-body p {
+      margin-bottom: 24px;
+    }
+
+    .article-body h2 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .article-body blockquote {
+      background: var(--navy);
+      border-left: 4px solid var(--orange);
+      margin: 32px 0;
+      padding: 24px 28px;
+      color: rgba(255,255,255,0.85);
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    .article-body blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--orange);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .article-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .article-tag {
+      font-size: 0.72rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--orange-pale);
+      color: var(--ink-mid);
+      border: 1px solid var(--border-dark);
+      padding: 4px 12px;
+    }
+
+    @media (max-width: 640px) {
+      .article-title { font-size: 1.8rem; }
+      .article-wrapper { padding: 32px 16px 56px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-brand">
+        <img src="../images/logo.jpeg" alt="Logo Grêmio CED 15" class="header-logo" />
+        <div class="header-title">
+          <span class="main-name">JORNAL CED 15</span>
+          <span class="sub-name">O jornal do nosso colégio</span>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="date" id="current-date">Carregando...</div>
+        <div>Ceilândia — DF</div>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="../index.html">Home</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="quadro.html">Quadro de Avisos</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="gremio.html">Grêmio</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="article-wrapper">
+
+      <a href="../index.html" class="article-back">← Voltar para Home</a>
+
+      <span class="article-category">Destaque</span>
+
+      <h1 class="article-title">Janjão escreve polêmicas no X (antigo Twitter)</h1>
+
+      <p class="article-subtitle">
+        Janjão demonstra seu apoio à continuidade da escala 6x1 e internautas se revoltam.
+      </p>
+
+      <div class="article-meta">
+        <span>Por <strong>Redação Jornal CEd 15</strong></span>
+        <span>·</span>
+        <span id="article-date">28 de maio de 2026</span>
+        <span>·</span>
+        <span>Categoria: <strong>Destaque</strong></span>
+      </div>
+
+      <img
+        src="../images/foto2.jpeg"
+        alt="Foto da notícia — Janjão"
+        class="article-hero-img"
+      />
+      <p class="article-img-caption">Janjão em seu instagram.</p>
+
+      <div class="article-body">
+
+        <p>
+          Janjão é um estudante de Relações Internacionais com posicionamento politico na direita. Janjao tem 21 anos de idade e mora em São Paulo no apartamento de seu pai. Tem mais de 1 milhão de seguidores em seu instagram.
+        </p>
+
+        <p>
+          Após toda a repercusão da PEC 221/2019, junto da luta de Erika Hilton e o movimento VAT, Janjão expressou no X (antigo Twitter) que era contra o fim da escala 6x1 e que a jornada de trabalho deveria aumentar para 52 horas semanais de trabalho.
+        </p>
+
+        <h2>O que foi publicado</h2>
+
+        <p>
+          Janjão publicou no X o seguinte post.
+        </p>
+
+        <blockquote>
+          "Sabemos que essa PEC da 6x1 é uma completa palhaçada. Se não quer trabalhar, que peça demissão. 52 horas semanais de trabalho não é nada!"
+          <cite>— X / Janjão</cite>
+        </blockquote>
+
+        <h2>A reação nas redes</h2>
+
+        <p>
+          A fala de Janjão não teve uma boa repercussão. Os internautas responderam com palavras de baixo calão, ofensas e até ameaças. Janjão até o momento atual não respondeu e nem se pronunciou.
+        </p>
+
+        <p>
+          Toda essa repercussão da PEC vem causando escandalos, e os internautas não medem palavras para falar com quem tem seu posicionamento a respeito da PEC diferente. O deputado Nikolas Ferreira e a deputada Júlia Zanatta são exemplos dos alvos de ataque.
+        </p>
+
+      </div>
+
+      <div class="article-tags">
+        <span class="article-tag">Janjão</span>
+        <span class="article-tag">X / Twitter</span>
+        <span class="article-tag">Polêmica</span>
+        <span class="article-tag">Redes Sociais</span>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="../images/logo.jpeg" alt="Logo" />
+          <span class="footer-brand-name">JORNAL CED 15</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="../index.html">Home</a>
+          <a href="noticias.html">Notícias</a>
+          <a href="quadro.html">Quadro de Avisos</a>
+          <a href="eventos.html">Eventos</a>
+          <a href="gremio.html">Grêmio</a>
+          <a href="sobre.html">Sobre</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Jornal CEd 15 — Feito pelo Grêmio Estudantil · Ceilândia - DF · Joao Rikelme, Maria Luisa, Maria Eduarda, Meiriele e Brenda
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
